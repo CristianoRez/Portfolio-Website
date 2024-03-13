@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio Website</title>
+    <link rel="stylesheet" href="./styles/general.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/grid.css" />
+    <link rel="stylesheet" href="./styles/navbar.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <section class="left-section">
+        <nav class="navbar">
+          <div class="content">
+            <ul class="menu-list">
+              <div class="icon cancel-btn">
+                <i class="fas fa-times"></i>
+              </div>
+              <div class="list-container">
+                <li>
+                  <a
+                    class="js-navbar-buttons js-link-button"
+                    data-scroll=".projects-container"
+                    >Projetos</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="js-navbar-buttons js-link-button"
+                    data-scroll=".about-me-container"
+                    >Sobre mim</a
+                  >
+                </li>
+                <li>
+                  <a class="js-navbar-buttons js-contacts-link">Contatos</a>
+                </li>
+              </div>
+            </ul>
+            <div class="icon menu-btn js-menu-btn">
+              <i class="fas fa-bars"></i>
+            </div>
+          </div>
+        </nav>
+      </section>
+      <section class="right-section js-right-section js-contacts-link">
+        <div class="profile-header">
+          <div class="logo-header">CR</div>
+          <div>
+            <p>Cristiano Rezende</p>
+            <p>Full Stack Developer</p>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <div class="contacts-container js-contacts-container">
+      <ul class="contacts-list">
+        <a class="contact-link" href="https://github.com/CristianoRez">
+          <div class="github-container">
+            <img src="/images/github-logo.svg" class="contacts-image" />
+            <li class="contact-name">Github</li>
+          </div>
+        </a>
+        <a
+          class="contact-link"
+          href="https://www.linkedin.com/in/cristiano-rez-sa/"
+        >
+          <div class="linkedin-container">
+            <img src="/images/linkedin.webp" class="contacts-image" />
+            <li class="contact-name">Linkedin</li>
+          </div>
+        </a>
+        <a class="contact-link" href="mailto:cristianorezendesa@gmail.com">
+          <div class="email-container">
+            <img src="/images/email logo.png" class="contacts-image" />
+            <li class="contact-name">Email</li>
+          </div>
+        </a>
+      </ul>
+    </div>
+
+    <div class="wrapper">
+      <div class="profile-container">
+        <div>
+          <div class="profile-name">Cristiano Rezende</div>
+          <div class="profile-intro">
+            <h1>Desenvolvedor Full Stack</h1>
+            <h1>Técnico em informática (IFNMG)</h1>
+            <h1>Graduando em Sistemas de informação (UFMG)</h1>
+          </div>
+          <div>
+            <p>JavaScript, PHP, Laravel, MySQL, CSS, HTML</p>
+            <div class="projects-me-container">
+              <div
+                class="projects-link js-link-button"
+                data-scroll=".projects-container"
+              >
+                Projetos
+              </div>
+              ou
+              <div
+                class="me-link js-link-button"
+                data-scroll=".about-me-container"
+              >
+                Sobre mim
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="image-container">
+          <img class="profile-image" src="./images/1709641458019.png" />
+        </div>
+      </div>
+      <div class="projects-container" id="projects-container">
+        <h1 class="projects-container">Projetos</h1>
+        <div class="projects-grid">
+          <div class="project-container">
+            <p class="project-name">Amazon Front-end</p>
+            <a href="https://cristianorez.github.io/Amazon-JavaScript/">
+              <img class="project-image" src="images/amazon.png"
+            /></a>
+          </div>
+          <div class="project-container">
+            <p class="project-name">CSS & HTML course</p>
+            <a href="https://cristianorez.github.io/HTML-CSS-Project/">
+              <img class="project-image" src="images/CSS & HTML.png"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="about-me-container">
+        <h1 class="about-me-container">Sobre Mim</h1>
+        <div class="about-me-text">
+          <p>
+            Olá! Sou um jovem desenvolvedor fullstack. Dos 15 aos 18 anos
+            completei o ensino médio profissionalizante em técnico em
+            informática, onde adquiri conhecimentos de redes, hardware, banco de
+            dados e dei meus primeiros passos em programação. Conciliando os
+            estudos de TI com os vestibulares, estou no 1º semestre de Sistemas
+            de Infomação na UFMG e com uma boa base no desenvolvimento
+            Web. Já possuo projetos de back-end de ecommerces em PHP, utilizando
+            o framework laravel, e front-end em JavaScript, como pode ser
+            validado no meu repositório. Tenho inglês intermediário que me
+            permite buscar conhecimentos no exterior e ter feito cursos como o
+            de JavaScript, CSS e HTML do canal SuperSimpleDev. Atualmente busco
+            uma oportunidade para continuar desenvolvendo minhas habilidades
+            enquanto meus projetos tem uma aplicação prática na sociedade.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="module" src="./scripts/navbar.js"></script>
+  <script type="module" src="./scripts/contacts.js"></script>
+</html>
