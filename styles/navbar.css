@@ -57,5 +57,6 @@ body.disabled {
   margin-bottom: 0%;
 }
 .navbar .menu-list li {
+  cursor: pointer;
   margin-top: 45px;
 }

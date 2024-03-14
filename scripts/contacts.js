@@ -1,5 +1,6 @@
 document.querySelectorAll(".js-contacts-link").forEach((link) => {
-  link.addEventListener("click", () => {
+  link.addEventListener("click", (event) => {
+    event.stopPropagation();
     if (
       document
         .querySelector(".js-contacts-container")
@@ -12,4 +13,12 @@ document.querySelectorAll(".js-contacts-link").forEach((link) => {
   });
 });
 
-
+document.addEventListener("click", (event) => {
+  const contactsContainer = document.querySelector(".js-contacts-container");
+  if (
+    event.target !== contactsContainer &&
+    !contactsContainer.contains(event.target)
+  ) {
+    contactsContainer.classList.remove("show");
+  }
+});

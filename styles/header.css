@@ -42,13 +42,14 @@
   font-weight: 700;
   font-style: normal;
 }
-.icon-cancel-button {
+.icon {
   cursor: pointer;
 }
 .contacts-image {
   height: 40px;
 }
 .contacts-container {
+  background-color: white;
   display: flex;
   flex-direction: column;
   position: fixed;
