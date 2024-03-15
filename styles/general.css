@@ -45,43 +45,6 @@ h1 {
   border-bottom-right-radius: 1%;
   cursor: pointer;
 }
-
-@media (min-width: 1430px) {
-  .wrapper {
-    width: 1300px;
-  }
-  .profile-container {
-    display: flex;
-    flex-direction: row;
-  }
-}
-@media (max-width: 1430px) and (min-width: 1100px) {
-  .wrapper {
-    width: auto;
-  }
-}
-@media (max-width: 1099px) {
-  .profile-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .wrapper {
-    width: auto;
-  }
-  .profile-intro {
-    width: 350px;
-  }
-  h1 {
-    font-size: 30px;
-  }
-  .profile-image {
-    border-radius: 0px;
-    margin-top: 10vh;
-  }
-
-}
-
 .projects-link {
   padding-right: 15px;
   font-size: 16px;
@@ -120,4 +83,47 @@ h1 {
 .project-image {
   margin-top: 10px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 1430px) {
+  .wrapper {
+    width: 1300px;
+  }
+  .profile-container {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media (max-width: 1430px) and (min-width: 1100px) {
+  .wrapper {
+    width: auto;
+  }
+}
+@media (max-width: 1099px) {
+  .profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .wrapper {
+    width: auto;
+  }
+  .profile-intro {
+    width: 350px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  .profile-image {
+    border-radius: 0px;
+    margin-top: 10vh;
+  }
+  .about-me-text {
+    font-size: 20px;
+  }
+}
+@media (max-width: 700px) {
+  .about-me-text {
+    font-size: 15px;
+  }
 }
